@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrendsSpark.ai - Home</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #2a004f, #000);
+        color: white;
+        overflow-x: hidden;
+      }
+
+      .header {
+        text-align: center;
+        font-size: 3rem;
+        font-weight: bold;
+        color: #9b5de5;
+        padding: 20px;
+      }
+
+      .category {
+        margin: 20px;
+        font-size: 2rem;
+        font-weight: bold;
+      }
+
+      .slider {
+        display: flex;
+        overflow-x: hidden;
+        white-space: nowrap;
+        padding: 10px;
+        transition: transform 0.5s ease-in-out;
+      }
+
+      .widget {
+        display: inline-block;
+        background: #111;
+        color: white;
+        margin: 10px;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        border-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .widget:hover {
+        transform: scale(1.2);
+      }
+      .title {
+        position: absolute;
+
+        background-color: #000;
+        height: 100%;
+        width: 100%;
+        animation: fadeOut 2s 2s forwards;
+      }
+
+      .tt {
+        font-size: 3rem;
+        font-weight: bold;
+        color: #b48de3;
+        animation: zoomIn 1.2s forwards, fadeOut 1s 2s forwards;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      @keyframes zoomIn {
+        0% {
+          transform: translate(-50%, -50%) scale(0);
+          opacity: 0;
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+          opacity: 1;
+        }
+      }
+
+      @keyframes fadeOut {
+        0% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+          display: none;
+        }
+      }
+      .container {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+      }
+
+      .section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: flex 0.5s ease-in-out;
+      }
+
+      .left {
+        background: black;
+        color: #9b5de5;
+      }
+      .right {
+        background: #9b5de5;
+        color: black;
+      }
+
+      .left:hover {
+        flex: 3;
+      }
+      .right:hover {
+        flex: 3;
+      }
+    </style>
+    <script>
+      function slide(category, direction) {
+        const container = document.getElementById(category);
+        if (direction === "left") {
+          container.scrollBy({ left: -200, behavior: "smooth" });
+        } else {
+          container.scrollBy({ left: 200, behavior: "smooth" });
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="title">
+      <h1 class="tt">TrendsSpark.ai</h1>
+    </div>
+    <div class="header">TrendsSpark.ai</div>
+
+    <div class="category">Gaming</div>
+    <button onclick="slide('gaming', 'left')">⬅</button>
+    <button onclick="slide('gaming', 'right')">➡</button>
+    <div class="slider" id="gaming">
+      <div class="widget">Game 1</div>
+      <div class="widget">Game 2</div>
+      <div class="widget">Game 3</div>
+      <div class="widget">Game 4</div>
+    </div>
+
+    <div class="category">Music</div>
+    <button onclick="slide('music', 'left')">⬅</button>
+    <button onclick="slide('music', 'right')">➡</button>
+    <div class="slider" id="music">
+      <div class="widget">Song 1</div>
+      <div class="widget">Song 2</div>
+      <div class="widget">Song 3</div>
+      <div class="widget">Song 4</div>
+    </div>
+
+    <div class="category">Films</div>
+    <button onclick="slide('films', 'left')">⬅</button>
+    <button onclick="slide('films', 'right')">➡</button>
+    <div class="slider" id="films">
+      <div class="widget">Film 1</div>
+      <div class="widget">Film 2</div>
+      <div class="widget">Film 3</div>
+      <div class="widget">Film 4</div>
+    </div>
+
+    <div class="category">Trending Now</div>
+    <button onclick="slide('trending', 'left')">⬅</button>
+    <button onclick="slide('trending', 'right')">➡</button>
+    <div class="slider" id="trending">
+      <div class="widget">Trend 1</div>
+      <div class="widget">Trend 2</div>
+      <div class="widget">Trend 3</div>
+      <div class="widget">Trend 4</div>
+    </div>
+    <div class="container">
+      <div class="section left">Beginner</div>
+      <div class="section right">Experienced</div>
+    </div>
+  </body>
+</html>
