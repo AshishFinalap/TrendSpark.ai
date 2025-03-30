@@ -1,0 +1,63 @@
+/* Contact List Styles */  
+
+body {  
+    font-family: Arial, sans-serif;  
+    background-color: #f4f4f9;  
+    margin: 0;  
+    padding: 20px;  
+}  
+
+h2 {  
+    text-align: center;  
+    color: #333;  
+}  
+
+.contact-item {  
+    background-color: #fff;  
+    border: 1px solid #ddd;  
+    border-radius: 5px;  
+    padding: 10px;  
+    margin: 10px 0;  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);  
+    transition: background-color 0.3s;  
+}  
+
+.contact-item:hover {  
+    background-color: #f0f8ff;  
+}  
+
+.contact-item p {  
+    margin: 0;  
+    color: #555;  
+}  
+
+button {  
+    background-color: #ff4d4d;  
+    color: white;  
+    border: none;  
+    border-radius: 5px;  
+    padding: 8px 12px;  
+    cursor: pointer;  
+    transition: background-color 0.3s;  
+}  
+
+button:hover {  
+    background-color: #ff1a1a;  
+}  
+
+input[type="text"] {  
+    padding: 10px;  
+    margin: 5px 0;  
+    border: 1px solid #ddd;  
+    border-radius: 5px;  
+    width: calc(100% - 22px); /* Full width minus padding */  
+}  
+
+.error-message {  
+    color: #ff4d4d;  
+    text-align: center;  
+    margin: 10px 0;  
+}  

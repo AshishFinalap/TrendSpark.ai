@@ -1,0 +1,45 @@
+.product {  
+    border: 1px solid #ddd; /* Light border around product */  
+    border-radius: 5px; /* Rounded corners */  
+    padding: 16px; /* Spacing inside the product card */  
+    margin: 16px 0; /* Space above and below each product */  
+    background-color: #fff; /* White background for the product */  
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */  
+  }  
+  
+  .product img {  
+    max-width: 100%; /* Responsive image */  
+    height: auto; /* Maintain aspect ratio */  
+    border-radius: 5px; /* Rounded corners for the image */  
+  }  
+  
+  .product h2 {  
+    font-size: 24px; /* Title size */  
+    margin: 0 0 8px; /* Margin for spacing */  
+  }  
+  
+  .product p {  
+    font-size: 16px; /* Description size */  
+    color: #555; /* Dark gray text color */  
+  }  
+  
+  .reviewSection {  
+    margin-top: 24px; /* Space above reviews section */  
+  }  
+  
+  .review {  
+    border: 1px solid #e0e0e0; /* Light border around each review */  
+    border-radius: 5px; /* Rounded corners for reviews */  
+    padding: 12px; /* Padding inside each review */  
+    margin-bottom: 12px; /* Space between reviews */  
+    background-color: #f9f9f9; /* Light gray background for review */  
+  }  
+  
+  .review strong {  
+    color: #333; /* Dark color for the reviewer username */  
+  }  
+  
+  .review em {  
+    color: #ff9800; /* Orange color for the rating stars */  
+    margin-left: 4px; /* Space between rating text and stars */  
+  }  
