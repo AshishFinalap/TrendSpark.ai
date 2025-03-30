@@ -24,7 +24,7 @@ function Header({ isScrolled }) {
   return (
     <header className={`app-header ${isScrolled ? 'scrolled' : ''}`}>
       <Link 
-        to="/App.js" 
+        to="/" 
         style={{ textDecoration: 'none', color: 'inherit' }} 
         className="header-logo"
       >
