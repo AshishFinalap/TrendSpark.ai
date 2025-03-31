@@ -1,14 +1,14 @@
 // src/App.js
 import React, { useState, useEffect, useCallback } from 'react';
 // Assuming imports point to the correct Components subfolder
-import SplashScreen from './Components/SplashScreen';
-import Header from './Components/Header'; // <<< Make sure this path is correct
-import CategorySlider from './Components/CategorySlider';
-import UserTypeSelector from './Components/UserTypeSelector';
-import SurveyForm from './Components/SurveyForm';
-import SuggestionsDisplay from './Components/SuggestionsDisplay';
-import BreakdownPage from './Components/BreakdownPage';
-import Footer from './Components/Footer';
+import SplashScreen from './SplashScreen';
+import Header from './Header'; // <<< Make sure this path is correct
+import CategorySlider from './CategorySlider';
+import UserTypeSelector from './UserTypeSelector';
+import SurveyForm from './SurveyForm';
+import SuggestionsDisplay from './SuggestionsDisplay';
+import BreakdownPage from './BreakdownPage';
+import Footer from './Footer';
 import './App.css';
 
 // --- Updated sliderData (Assuming this is correct) ---
