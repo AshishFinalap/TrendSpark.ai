@@ -407,3 +407,7 @@ body::before { /* Background pattern */
     .breakdown-title { font-size: 1.6rem; }
     .breakdown-section h3 { font-size: 1.3rem; }
 }
+.header-logo
+{
+  cursor: pointer;
+}
